@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+
+        <title>Eco-Logic Quizz</title>
+
+        <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
+    </head>
+
+    <body id="slickQuiz" style="background-image:url('img/homePage.png');height:1070px;width:1300px;background-repeat:no-repeat;padding:0;">
+        <div id="page" >
+        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+
+        <div>
+            <div class="quizArea" style="width:1180px;" >
+            <div class="quizHeader" style="rest-before:none; padding-top:580px; margin-left:280px;">
+                <!-- where the quiz main copy goes -->
+                <div style="">
+                     <a class="button startQuiz"  href="">
+                         <div style="height:50px;padding-top:25px;" id="getStarted">
+                              Get Started!
+                         </div>
+                     </a>
+                </div>
+            </div>
+            <!-- where the quiz gets built -->
+        </div>
+        </div>
+        <div class="quizResults" style="rest-before:none; padding-top:750px; margin-left:270px; height:500px; font-family:'Comic Sans MS';font-size:24px">
+            <h3 class="quizScore">You Scored: <span ><!-- where the quiz score goes --></span></h3>
+
+            <h3 class="quizLevel"><strong>Ranking:</strong> <span style="font-size:24px"><!-- where the quiz ranking level goes --></span></h3>
+
+            <div class="quizResultsCopy" style="font-size:24px">
+                <!-- where the quiz result copy goes -->
+            </div>
+        </div>
+        </div>
+        <script src="js/jquery-1.7.min.js"></script>
+        <script src="js/slickQuiz-config.js"></script>
+        <script src="js/slickQuiz.js"></script>
+        <script src="js/master.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#getStarted").click(function () {
+                    //alert('button clicked');
+                    $("body").css("background-image", "url('img/firstBg.png')");
+                    //alert('button clicked');
+                }
+            );
+            });
+       </script>
+        <audio autoplay loop>
+          <source src="audio/01-mb-title.mp3" type="audio/mp3" />
+          <source src="audio/02-mb-game-start.mp3" type="audio/mp3" />
+          <source src="audio/03-mb-stage-theme-1.mp3" type="audio/mp3" />
+        </audio>
+    </body>
+</html>
